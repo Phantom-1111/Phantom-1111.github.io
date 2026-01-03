@@ -2,92 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Koukuntla Deepak | Professional Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio // OS.2026</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="cursor-glow"></div>
+    <div class="grid-overlay"></div>
 
-<nav class="navbar">
-    <div class="logo">Deepak</div>
-    <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
+    <main class="container">
+        <header>
+            <div class="logo">PORTFOLIO_V1.0</div>
+            <nav>
+                <a href="#work">PROJECTS</a>
+                <a href="#about">SYSTEM</a>
+                <a href="#contact" class="contact-btn">INITIALIZE CONTACT</a>
+            </nav>
+        </header>
 
-<main class="scroll-container">
+        <section class="hero">
+            <p class="status-code"><code>[STATUS: ACTIVE]</code></p>
+            <h1 id="hero-text">DESIGNING <br><span class="accent">FUTURE INTERFACES</span></h1>
+            <p class="description">Building high-performance digital ecosystems with a focus on motion, depth, and clean engineering.</p>
+        </section>
 
-<section id="home" class="section hero">
-    <h1>Koukuntla Deepak</h1>
-    <p>AI & ML Engineer | Software Developer</p>
-    <a href="#projects" class="primary-btn">View Projects</a>
-</section>
+        <section class="bento-grid" id="work">
+            <div class="card wide" onmousemove="glowEffect(event)">
+                <div class="card-content">
+                    <span class="tag">AI / UI</span>
+                    <h3>NEURAL_INTERFACE</h3>
+                    <p>A bio-metric data visualization platform.</p>
+                </div>
+            </div>
 
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-        Artificial Intelligence and Machine Learning student with a strong
-        foundation in software development and data-driven problem solving.
-        Passionate about building scalable, real-world systems.
-    </p>
-</section>
+            <div class="card" onmousemove="glowEffect(event)">
+                <div class="card-content">
+                    <span class="tag">WEB3</span>
+                    <h3>CRYPTO_CORE</h3>
+                </div>
+            </div>
 
-<section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <span>Python</span>
-        <span>Java</span>
-        <span>Machine Learning</span>
-        <span>XGBoost</span>
-        <span>FastAPI</span>
-        <span>SQL / PL-SQL</span>
-        <span>HTML & CSS</span>
-    </div>
-</section>
+            <div class="card" onmousemove="glowEffect(event)">
+                <div class="card-content">
+                    <span class="tag">MOBILE</span>
+                    <h3>QUANTUM_APP</h3>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<section id="projects" class="section">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>AIoT-Based Heart Disease Prediction</h3>
-        <p>
-            Real-time heart anomaly detection using IoT sensors and an optimized
-            machine learning model.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h3>Student Dropout Prediction System</h3>
-        <p>
-            Predictive analytics system to identify students at risk using
-            supervised learning techniques.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h3>GROOMYOU – AI Fashion Recommendation App</h3>
-        <p>
-            AI-powered platform recommending grooming styles and outfits
-            based on user features.
-        </p>
-    </div>
-</section>
-
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> deepak@example.com</p>
-    <p><strong>GitHub:</strong> github.com/yourusername</p>
-    <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
-</section>
-
-</main>
-
-<footer class="footer">
-    © 2026 Koukuntla Deepak
-</footer>
-
+    <script src="javascript.js"></script>
 </body>
 </html>
