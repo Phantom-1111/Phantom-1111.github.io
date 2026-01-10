@@ -14,51 +14,18 @@ function addUser()
 
 function dispMessage()
 {
-    //a=10
-    //b=20
-    //c=a+b
-    //alert("Message")
+    
 
-
-    /*const user = {
-        name :"Jhon",
-        email: "jhon@gmail.com",
-        password:"1234",
-    };
-    console.log(user.name)*/
-
-    /*const arr =["Maths","Science"];
-    console.log(arr[1])
-    arr.push("English")
-    console.log(arr)
-*/
-    users = [
-        {
-        name :"Jhon",
-        email: "jhon@gmail.com",
-        password:"1234",
-        },
-        {
-        name :"cena",
-        email: "cena@gmail.com",
-        password:"4321",
-    }
-    ]
-
-    //alert(document.getElementById("log").value)
-    //lblMessage.innerHTML = document.getElementById("email").value + "-" + document.getElementById("pass").value
-
-    /*let email = document.getElementById('emailtext').value
-    let password = document.getElementById('pass').value
-    if(email==="@kitsw" && password==="1234")
-    {
-        lblMessage.innerHTML = "Welcome";
-
-    }
-    else
-    {
-        lblMessage.innerHTML = "Access denied";
-    }*/
+    let email = document.getElementById("emailtext").value;
+  let password = document.getElementById("Pass").value;
+  let found = users.find(
+    (element) => element.email === email && element.password === password
+  );
+  if (found) {
+    lblMessage.innerHTML = "Welcome";
+  } else {
+    lblMessage.innerHTML = "Access Denied";
+  }
 }
 
 function showLoginForm()
