@@ -1,0 +1,15 @@
+.login-btn{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.reg-btn
+{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    
+}
