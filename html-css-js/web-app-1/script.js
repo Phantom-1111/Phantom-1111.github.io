@@ -72,7 +72,7 @@ function showLoginForm()
         <p><input type ="password" id="pass" placeholder="Password"></p>
         <p><button class="login-btn" onclick = "dispMessage()"> Login </button></p>
          
-        <p><button>Create Account</button></p>
+        
         <p><button class="reg-btn" onclick ="showRegisterForm()">Register</button></p>
 
     `
@@ -87,7 +87,7 @@ function showRegisterForm()
         <p><input type="text" id="nametext" placeholder="UserName"></p>
         <p><input type="text" id="emailtext" placeholder="Email Address"></p>
         <p><input type ="password" id="pass" placeholder="Password"></p>
-        <p><button class="login-btn" onclick = "dispMessage()"> Register </button></p>
+        
         <p><button class = "submit-btn" onclick="addUser()">Submit</button>
         <p><button class="reg-btn" onclick ="showLoginForm()">Login</button></p>
     
